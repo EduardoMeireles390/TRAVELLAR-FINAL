@@ -17,29 +17,29 @@
 
   <!-- começo menu -->
   <header class="header-page">
-    <div class="container"> 
-        <nav class="navbar">
-          <a class="nav-branding"><img src="img/logo.png" alt="Logo"></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="#recomendados" class="nav-link">Lugares</a>
-            </li>
-            <li class="nav-item">
-              <a href="#dicas" class="nav-link">Hospedagem</a>
-            </li>
-            <li class="nav-item">
-              <a href="#reviews" class="nav-link">Recomendações</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-     </div>
-   </header>
-<!-- fim menu -->
+    <div class="container">
+      <nav class="navbar">
+        <a class="nav-branding"><img src="img/logo.png" alt="Logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#recomendados" class="nav-link">Lugares</a>
+          </li>
+          <li class="nav-item">
+            <a href="#dicas" class="nav-link">Hospedagem</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">Recomendações</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- fim menu -->
 
   <!-- SEÇÃO INÍCIO -->
   <section class="inicio" id="inicio">
@@ -55,42 +55,43 @@
   <!-- Opção de Viagem -->
   <section class="filtro-busca">
     <form class="filtro-busca__form">
-        <label class="filtro-busca__form-search">Aonde você vai?
-            <input type="search" required>
+      <label class="filtro-busca__form-search">Aonde você vai?
+        <input type="search" required>
+      </label>
+
+      <fieldset>
+        <legend>Tipo de viagem</legend>
+
+        <div class="filtro-busca__form-tipo">
+          <label>
+            <input type="radio" name="tipo-viagem" checked> Viagem <i class="fa-solid fa-plane"></i>
+          </label>
+          <label>
+            <input type="radio" name="tipo-viagem"> Trabalho <i class="fa-solid fa-briefcase"></i>
+          </label>
+          <label>
+            <input type="radio" name="tipo-viagem"> Turismo <i class="fa-solid fa-map-location-dot"></i>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="filtro-busca__form-data">
+        <label class="filtro-busca__form-data--inicial">Data inicial
+          <input type="date" required>
         </label>
-
-        <fieldset>
-            <legend>Tipo de viagem</legend>
-
-            <div class="filtro-busca__form-tipo">
-                <label>
-                    <input type="radio" name="tipo-viagem" checked> Viagem <i class="fa-solid fa-plane"></i>
-                </label>
-                <label>
-                    <input type="radio" name="tipo-viagem"> Trabalho <i class="fa-solid fa-briefcase"></i>
-                </label>
-                <label>
-                    <input type="radio" name="tipo-viagem"> Turismo <i class="fa-solid fa-map-location-dot"></i>
-                </label>
-            </div>
-        </fieldset>
-
-        <fieldset class="filtro-busca__form-data">
-            <label class="filtro-busca__form-data--inicial">Data inicial
-                <input type="date" required>
-            </label>
-            <label class="filtro-busca__form-data--final">Data final
-                <input type="date" required>
-            </label>
-        </fieldset>
-
-        <label class="filtro-busca__form-qtde">Quartos e hóspedes
-            <input type="text" value="1 quarto, 2 hóspedes" readonly>
+        <label class="filtro-busca__form-data--final">Data final
+          <input type="date" required>
         </label>
+      </fieldset>
 
-        <button class="filtro-busca__form-botao botao" type="submit">Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
+      <label class="filtro-busca__form-qtde">Quartos e hóspedes
+        <input type="text" value="1 quarto, 2 hóspedes" readonly>
+      </label>
+
+      <button class="filtro-busca__form-botao botao" type="submit">Buscar <i
+          class="fa-solid fa-magnifying-glass"></i></button>
     </form>
-</section>
+  </section>
   <!-- hotel 1 -->
   <section class="hotel">
     <div class="box-container">
@@ -131,6 +132,9 @@
               </div>
             </div>
 
+            <label for="" class="btn"><a href="/Mercure.html">Ver mais</a></label>
+            <input type="" id="" class="checkboxmodal">
+
           </div>
         </div>
       </div>
@@ -161,19 +165,24 @@
             </p>
 
             <!-- área do modal1 - popup -->
-            
+
             <label for="modalexemplo1" class="btn">Localização</label>
             <input type="checkbox" id="modalexemplo1" class="checkboxmodal1">
 
             <div class="modal1">
               <label for="modalexemplo1" class="fecharmodal1">X</label>
               <div class="conteudomodal1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.881883763567!2d-46.66918492557382!3d-23.608568678767377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a08c3b44cb7%3A0x988947deddbd766!2sBourbon%20Convention!5e0!3m2!1spt-BR!2sbr!4v1682268739259!5m2!1spt-BR!2sbr"
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.881883763567!2d-46.66918492557382!3d-23.608568678767377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a08c3b44cb7%3A0x988947deddbd766!2sBourbon%20Convention!5e0!3m2!1spt-BR!2sbr!4v1682268739259!5m2!1spt-BR!2sbr"
                   width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
+            <label for="" class="btn"><a href="/Bourbon.html">Ver mais</a></label>
+            <input type="" id="" class="checkboxmodal">
           </div>
+
+
         </div>
       </div>
     </div>
@@ -203,9 +212,9 @@
             <p> Quarto com cama de casal queen size, ducha, TV a cabo, wi-fi de alta velocidade, mesa de trabalho,
               frigobar, opção de almofadas</p>
 
-              <!-- início modal2 -->
+            <!-- início modal2 -->
 
-              <label for="modalexemplo2" class="btn">Localização</label>
+            <label for="modalexemplo2" class="btn">Localização</label>
             <input type="checkbox" id="modalexemplo2" class="checkboxmodal2">
 
             <div class="modal2">
@@ -216,7 +225,11 @@
                   width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
+
             </div>
+
+            <label for="" class="btn"><a href="/Trianon.html">Ver mais</a></label>
+            <input type="" id="" class="checkboxmodal">
 
 
 

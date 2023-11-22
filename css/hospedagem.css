@@ -63,6 +63,10 @@ a{
   text-decoration: none;
 }
 
+.text-color{
+  color: #000;
+}
+
 .container{
   max-width: 1224px;
   width: 92%;
